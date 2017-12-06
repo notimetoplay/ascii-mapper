@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>ASCII Mapper</title>
+<style>
+	@font-face {
+		Font-family: "Square";
+		src: url("square.ttf");
+	}
+	
+	body {
+		Font-family: sans-serif;
+		Text-align: center;
+		Color: black;
+		Background-color: beige;
+	}
+	
+	#brush {
+		Font-family: Square;
+		Font-size: 48pt;
+	}
+	
+	#palette input {
+		Font-family: Square;
+		Font-size: 16pt;
+	}
+</style>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="editor.js"></script>
+<meta name="viewport" content="width=1024">
+
+<canvas id="map-display" width="600" height="600"></canvas>
+
+<fieldset style="Float: left;">
+ <legend>Tools</legend>
+ <p><b>Press a key<br>to set brush.</b></p>
+ <input type="button" id="brush" value="#">
+ <p id="palette"></p>
+ <label>Zoom<br><input id="zoom" type="range" min="1", max="5" step="1" value="3" style="Width: 56pt;"></label>
+ <p id="coords"></p>
+</fieldset>
+
+<fieldset style="Float: right;">
+ <legend>Load/Save</legend>
+ <input type="button" id="to-text" value="To text">
+ <input type="button" id="to-json" value="To JSON">
+<br>
+ <textarea id="map-source" rows="25" cols="25"></textarea>
+<br>
+ <input type="button" id="from-text" value="From text">
+ <input type="button" id="from-json" value="From JSON">
+ 
+ <p>Map size</p>
+ 
+ <input id="map-width" type="number" size="3" min="1" max="100" value="25" style="Width: 32pt;">
+ x
+ <input id="map-height" type="number" size="3" min="1" max="100" value="25" style="Width: 32pt;">
+ <br>
+ <input id="new-map" type="button" value="New map">
+ <input id="resize-map" type="button" value="Resize map">
+</fieldset>
+
+<p><small role="contentinfo">The Square font by <a href="http://strlen.com/square">Wouter van Oortmerssen</a> is available under the <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported license</a>.</small></p>
