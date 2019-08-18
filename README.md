@@ -9,6 +9,8 @@ Other ASCII art editors exist. This one differs from them in two big ways:
 1. It uses square tiles, so you can estimate distances well.
 2. It doesn't deal in color, to keep it abstract and distraction-free.
 
+ASCII Mapper started out as a quick-and-dirty online prototype. As of 17 August 2019, there's also a desktop version offering more features.
+
 But how will I know what all the symbols mean?
 ----------------------------------------------
 
@@ -36,5 +38,6 @@ You can also use any other character on the keyboard; just press any key you wan
 Limitations
 -----------
 
-ASCII Mapper handles maps of up to 100x100. You can't fit much more in a reasonably-sized browser window anyway, even at minimum zoom. A future version might put the map in a scrollable viewport of its own.
+ASCII Mapper handles maps of up to 100x100. You can't fit much more in a reasonably-sized browser window anyway, even at minimum zoom. The desktop version puts the map in a scrollable viewport, but even then it can only handle so many tiles at once before it becomes too slow.
+
 
